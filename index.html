@@ -18,8 +18,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-    </script>
+
   </head>
 
   <body data-stellar-background-ratio="1" data-spy="scroll" data-target=".navbar">
@@ -190,7 +189,7 @@
     <div class="container" id="about">
         <div class="col-md-4 col-xs-6">
           <h3>Me</h3>
-          <p>I am Xin Li a <a href="#" title="more information" id="item1">Front-end Design/Developer</a> from China living & working in San Jose, California. </p>
+          <p>I am Xin Li a Front-end Design/Developer from China living & working in San Jose, California. </p>
           <p>Aesthetic swag pug neutra. Chicharrones iceland tofu, health goth master cleanse gochujang shabby chic. Hexagon asymmetrical direct trade, messenger bag glossier pok pok cliche edison bulb pour-over. XOXO neutra quinoa meggings, crucifix jean shorts mlkshk. Hexagon scenester street art.</p>
         </div>
         <div class="col-md-4 col-xs-6">
@@ -316,27 +315,28 @@
         <form>
           <div class="form-group col-md-6">
             <label for="name">Name</label>
-            <input class="form-control" type="text" required="required" placeholder="enter name">
+            <input class="form-control name" type="text" required="required" placeholder="enter name">
           </div>
           <div class="form-group col-md-6">
             <label for="email">Email</label>
-            <input class="form-control" type="email" required="required" placeholder="enter email">
+            <input class="form-control email" type="email" required="required" placeholder="enter email">
           </div>
           <div class="form-group col-md-6">
             <label for="company">Company Name or Organization</label>
-            <input class="form-control" type="text" placeholder="enter company or organization">
+            <input class="form-control company" type="text" placeholder="enter company or organization">
           </div>
           <div class="form-group col-md-6">
             <label for="phone">Phone Number</label>
-            <input class="form-control" type="text" placeholder="phone number">
+            <input class="form-control phone" type="text" placeholder="phone number">
           </div>
-          <div class="form-group col-md-12 message-box">
+          <div class="form-group col-md-12">
             <label for="message">Message</label>
             <textarea class="form-control message-box" style="resize:none" cols="40" rows="5" placeholder="your message here"></textarea>
             <p id="visible-comment"></p>
+            <p id="char-count"></p>
           </div>
           <div class="form-group col-md-12">
-            <button id="subMesg" type="submit" class="btn btn-default">Send Message</button>
+            <button id="button" type="submit" class="btn btn-default">Send Message</button>
           </div>
         </form>
     </div><!--end container-->
