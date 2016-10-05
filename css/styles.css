@@ -77,9 +77,6 @@ body {
 }
 /**** FAQ END ****/
 /****Carousel Slide****/
-.img-responsive{
-  padding: 5% 0;
-}
 .carousel {
   margin-left: -15px;
   margin-right: -15px;
@@ -124,3 +121,31 @@ footer{
   text-decoration:none;
 }
 /**** Footer END ****/
+/**** WORK ****/
+.work-img {
+  display: block; /* needed to center the element with margin */
+  margin: auto; /* center the image inside the column if it's smaller */
+  max-width: 220px; /* needs to be set to the width of your image files if they are relatively small */
+  position: relative; /* is needed for .info position: absolute to work */
+  margin-top: 15%;
+}
+.work-img>img:hover{
+  filter: brightness(0.7);
+}
+.info {
+  position: absolute; /* let's us move the text around and not worry about the image */
+  top: 15%; /* position the text 15% away from the top */
+  left: 22%;
+  color:#FFF;
+  font-family:Futura;
+  text-transform:uppercase;
+  font-weight:700;
+  letter-spacing:0.5em;
+  line-height:1.6;
+  display: none;
+}
+.proj-title {
+  font-weight:300;
+  color: #FFF;
+}
+/**** WORK END ****/
